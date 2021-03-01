@@ -1,0 +1,20 @@
+﻿MedicalClinic
+
+
+winexe
+C#
+.cs
+E:\Programming\C# projects\NewMedicalClinic\MedicalClinic\obj\Debug\
+MedicalClinic
+none
+false
+DEBUG;TRACE
+E:\Programming\C# projects\NewMedicalClinic\MedicalClinic\App.xaml
+19-506326811
+21741717539
+401273883891
+20-1801705676
+AppPage\DoctorWindowPage\AppointmentListPage.xaml;AppPage\DoctorWindowPage\ProfilePage.xaml;AppPage\MainWindowPage\LogInPage.xaml;AppPage\ManagerWindowPage\DoctorRegPage.xaml;AppPage\ManagerWindowPage\DoctorsPage.xaml;AppPage\ManagerWindowPage\PatientRegPage.xaml;AppPage\PatientWindowPage\AppointmentCheckPage.xaml;AppPage\PatientWindowPage\AppointmentRegPage.xaml;AppPage\PatientWindowPage\MedcardPage.xaml;AppPage\PatientWindowPage\ProfilePage.xaml;DoctorWindow.xaml;MainWindow.xaml;ManagerWindow.xaml;PatientWindow.xaml;Windows\ConclusionAddWindow.xaml;Windows\ConclusionResultWindow.xaml;Windows\DoctorChangeWindow.xaml;MessageBox.xaml;Windows\ShowPatientsWindow.xaml;
+
+False
+

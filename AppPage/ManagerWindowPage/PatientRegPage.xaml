@@ -1,0 +1,81 @@
+﻿<Page x:Class="MedicalClinic.AppPage.ManagerWindowPage.PatientRegPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MedicalClinic.AppPage.ManagerWindowPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SignOutPage">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Margin="20">
+                <TextBlock Margin="0 0 0 20"
+                           Text="Реєстрація пацієнта"
+                           FontSize="27"
+                           FontWeight="Bold"/>
+                <StackPanel Width="400">
+                    <TextBox x:Name="LoginText"
+                             materialDesign:HintAssist.Hint="Введіть логін"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                             MaxWidth="400"/>
+                    <PasswordBox x:Name="PassText"
+                                 materialDesign:HintAssist.Hint="Введіть пароль"
+                                 Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"
+                                 MaxWidth="400"/>
+                    <PasswordBox x:Name="PassRepText"
+                                 materialDesign:HintAssist.Hint="Введіть повторення паролю"
+                                 Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"
+                                 MaxWidth="400"/>
+                    <TextBlock Text="Персональні дані"
+                       FontSize="20"
+                       MaxWidth="400"
+                       Margin="0 20"/>
+                    <TextBox x:Name="NameText"
+                             materialDesign:HintAssist.Hint="Введіть ім'я"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                             MaxWidth="400"/>
+                    <TextBox x:Name="SurnameText"
+                             materialDesign:HintAssist.Hint="Введіть прізвище"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                             MaxWidth="400"/>
+                    <ComboBox x:Name="SexText"
+                              materialDesign:HintAssist.Hint="Стать"
+                              Margin="0 10">
+                        <ComboBoxItem>
+                            Чоловік
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            Жінка
+                        </ComboBoxItem>
+                    </ComboBox>
+                    <DatePicker x:Name="DateText"
+                                materialDesign:HintAssist.Hint="Дата народження"
+                                HorizontalAlignment="Left"
+                                Style="{StaticResource MaterialDesignFloatingHintDatePicker}"
+                                Language="uk-UA">
+                    </DatePicker>
+                    <TextBox x:Name="EmailText"
+                             materialDesign:HintAssist.Hint="Введіть e-mail"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                             materialDesign:HintAssist.HelperText="Приклад введення: example@gmail.com"
+                             Margin="0 0 0 10"/>
+                    <TextBox x:Name="PhoneText"
+                             materialDesign:HintAssist.Hint="Введіть номер телефону"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                             materialDesign:HintAssist.HelperText="Приклад введення: 0661234567"
+                             Margin="0 0 0 10"
+                             PreviewTextInput="PhoneTextPreviewTextInput"
+                             MaxLength="10"/>
+                </StackPanel>
+                <Button Width="300"
+                    Margin="20"
+                    HorizontalAlignment="Center"
+                    Content="Зареєструватися"      
+                    Click="RegClick"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
